@@ -1,0 +1,20 @@
+telegram:
+  token: ${TELEGRAM_TOKEN}
+  chat_id: ${TELEGRAM_CHAT_ID}
+
+urls:
+  - name: "Google"
+    url: "https://www.google.com"
+    response_time_threshold_ms: 2000
+  - name: "My API"
+    url: "https://jsonplaceholder.typicode.com/posts/1"
+    response_time_threshold_ms: 1000
+
+thresholds:
+  cpu_percent: 80
+  memory_percent: 85
+  disk_percent: 90
+
+schedule:
+  check_interval_minutes: 5
+  daily_digest_time: "09:00"
